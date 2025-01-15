@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // Get Data with Fetch
+        async function getData() {
+
+            // Fetch file
+            const response = await fetch("data/test.csv");
+
+            // Parse data
+            const data = await response.text();
+
+            //View in Console
+            console.log(data);
+        }
+
+        getData();
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
